@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-reverse-engineering PUBLIC "-//Hibernate/Hibernate Reverse Engineering DTD 3.0//EN" "http://hibernate.org/dtd/hibernate-reverse-engineering-3.0.dtd" >
+
+<hibernate-reverse-engineering>
+  <table-filter match-schema="public" match-name="tbl_assigned"/>
+  <table-filter match-schema="public" match-name="mst_roles"/>
+  <table-filter match-schema="public" match-name="mst_role_group"/>
+  <table-filter match-schema="public" match-name="mst_role_to_group"/>
+  <table-filter match-schema="public" match-name="mst_rolegroup_to_user"/>
+  <table-filter match-schema="public" match-name="userdetails"/>
+  <table-filter match-schema="public" match-name="reg_manual_verification"/>
+</hibernate-reverse-engineering>

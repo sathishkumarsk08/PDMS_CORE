@@ -17,10 +17,7 @@ import org.springframework.core.io.FileSystemResource;
 import org.springframework.util.ResourceUtils;
 
 import javax.crypto.*;
-import javax.net.ssl.HostnameVerifier;
-import javax.net.ssl.HttpsURLConnection;
-import javax.net.ssl.SSLContext;
-import javax.net.ssl.SSLSession;
+import javax.net.ssl.*;
 import java.io.*;
 import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
@@ -39,7 +36,7 @@ import java.util.Objects;
 import java.util.PropertyResourceBundle;
 import java.util.ResourceBundle;
 
-import static com.msp.controller.RPController.UNQUESTIONING_TRUST_MANAGER;
+//import static com.msp.controller.RPController.UNQUESTIONING_TRUST_MANAGER;
 
 
 @Configuration
@@ -450,4 +447,24 @@ public class AuthenticationMosipUrl {
 
         HttpsURLConnection.setDefaultHostnameVerifier(allHostsValid);
     }
+
+    public static final TrustManager[] UNQUESTIONING_TRUST_MANAGER = new TrustManager[]{new X509TrustManager() {
+        @Override
+        public void checkClientTrusted(X509Certificate[] x509Certificates, String s) throws CertificateException {
+        }
+
+        public java.security.cert.X509Certificate[] getAcceptedIssuers() {
+            return null;
+        }
+
+        /* (non-Javadoc)
+         * @see javax.net.ssl.X509TrustManager#checkServerTrusted(java.security.cert.X509Certificate[], java.lang.String)
+         */
+        @Override
+        public void checkServerTrusted(X509Certificate[] arg0, String arg1)
+                throws java.security.cert.CertificateException {
+            // TODO Auto-generated method stub
+        }
+    }};
+
 }
