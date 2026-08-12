@@ -3587,12 +3587,7 @@ com.msp.service.msp_pms.DeviceModelRegistrationMSPService: int checkBulkDevCount
 com.msp.service.msp_pms.DeviceModelRegistrationMSPService: java.lang.String getSusBlackRevStatus(java.lang.String)
 com.msp.service.msp_pms.DeviceModelRegistrationMSPService: java.util.List getMSPDeviceList()
 com.msp.service.msp_pms.MSPAuditLogs
-com.msp.service.msp_pms.MSPAuditLogs: com.msp.pms.msppmsrepository.MSPAuditLogRepository mspAuditLogRepository
-com.msp.service.msp_pms.MSPAuditLogs: com.msp.common.Encryption encrypt
-com.msp.service.msp_pms.MSPAuditLogs: MSPAuditLogs()
-com.msp.service.msp_pms.MSPAuditLogs: void save()
 com.msp.service.msp_pms.MSPAuditLogs: void setAuditRequestDto(com.msp.util.PartnerManageEnum,javax.servlet.http.HttpServletRequest)
-com.msp.service.msp_pms.MSPAuditLogs: java.lang.String LogId()
 com.msp.service.msp_pms.MSPBacklistService
 com.msp.service.msp_pms.MSPBacklistService: com.msp.pms.msppmsrepository.MSPBacklistRepository mspBacklistRepository
 com.msp.service.msp_pms.MSPBacklistService: MSPBacklistService()
@@ -3603,7 +3598,6 @@ com.msp.service.msp_pms.MSPBacklistService: java.lang.String getReason(java.lang
 com.msp.service.msp_pms.MSPBacklistService: void delBlackPartner(java.lang.String)
 com.msp.service.msp_pms.MSPBacklistService: void deleteBlackPartner(java.lang.String)
 com.msp.service.msp_pms.MSPCertificateStoreService
-com.msp.service.msp_pms.MSPCertificateStoreService: MSPCertificateStoreService()
 com.msp.service.msp_pms.MSPDeviceBlacklistedService
 com.msp.service.msp_pms.MSPDeviceBlacklistedService: com.msp.pms.msppmsrepository.MSPDeviceBlacklistedRepository mspDeviceBlacklistedRepository
 com.msp.service.msp_pms.MSPDeviceBlacklistedService: MSPDeviceBlacklistedService()
@@ -3647,8 +3641,6 @@ com.msp.service.msp_pms.MSPFeatureMasterService: java.util.List getSubMenu(int,j
 com.msp.service.msp_pms.MSPFeatureMasterService: java.util.List getSubMenuId(int,java.util.List)
 com.msp.service.msp_pms.MSPFeatureMasterService: java.util.List getSubMenuChild(int,java.util.List)
 com.msp.service.msp_pms.MSPMailTemplateService
-com.msp.service.msp_pms.MSPMailTemplateService: com.msp.pms.msppmsrepository.MSPMailTemplateRepository mspMailTemplate
-com.msp.service.msp_pms.MSPMailTemplateService: MSPMailTemplateService()
 com.msp.service.msp_pms.MSPMsipLicenseService
 com.msp.service.msp_pms.MSPMsipLicenseService: com.msp.pms.msppmsrepository.MSPMispLicenseRepository mspMispLicenseRepository
 com.msp.service.msp_pms.MSPMsipLicenseService: MSPMsipLicenseService()

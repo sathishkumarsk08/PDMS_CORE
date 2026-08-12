@@ -3587,12 +3587,10 @@ com.msp.service.msp_pms.DeviceModelRegistrationMSPService -> com.msp.service.msp
     java.lang.String getSusBlackRevStatus(java.lang.String) -> getSusBlackRevStatus
     java.util.List getMSPDeviceList() -> getMSPDeviceList
 com.msp.service.msp_pms.MSPAuditLogs -> com.msp.service.msp_pms.MSPAuditLogs:
-    com.msp.pms.msppmsrepository.MSPAuditLogRepository mspAuditLogRepository -> mspAuditLogRepository
-    com.msp.common.Encryption encrypt -> encrypt
+    com.msp.pms.msppmsrepository.MSPAuditLogRepository mspAuditLogRepository -> a
+    com.msp.common.Encryption encrypt -> b
     void <init>() -> <init>
-    void save() -> save
     void setAuditRequestDto(com.msp.util.PartnerManageEnum,javax.servlet.http.HttpServletRequest) -> setAuditRequestDto
-    java.lang.String LogId() -> LogId
 com.msp.service.msp_pms.MSPBacklistService -> com.msp.service.msp_pms.MSPBacklistService:
     com.msp.pms.msppmsrepository.MSPBacklistRepository mspBacklistRepository -> mspBacklistRepository
     void <init>() -> <init>
@@ -3647,7 +3645,6 @@ com.msp.service.msp_pms.MSPFeatureMasterService -> com.msp.service.msp_pms.MSPFe
     java.util.List getSubMenuId(int,java.util.List) -> getSubMenuId
     java.util.List getSubMenuChild(int,java.util.List) -> getSubMenuChild
 com.msp.service.msp_pms.MSPMailTemplateService -> com.msp.service.msp_pms.MSPMailTemplateService:
-    com.msp.pms.msppmsrepository.MSPMailTemplateRepository mspMailTemplate -> mspMailTemplate
     void <init>() -> <init>
 com.msp.service.msp_pms.MSPMsipLicenseService -> com.msp.service.msp_pms.MSPMsipLicenseService:
     com.msp.pms.msppmsrepository.MSPMispLicenseRepository mspMispLicenseRepository -> mspMispLicenseRepository
